@@ -1,4 +1,4 @@
-'''a="saravanan"
+a="saravanan"
 print(a.center(30))
 b="am saravanan"
 print(b.capitalize())
@@ -23,7 +23,7 @@ for i in s:
 print("no of vowles:",c)
 
 
-
+-------------------------------------------------------------------------
 
 # TASK 1
 
@@ -75,13 +75,85 @@ s1=""
 for i in s:
     if i not in s1:
         s1+=i
-print(s1)'''
+print(s1)
 
 # TASK 12
 s=input("enter the name :")
 a=s.title()
 print(a)
 
+
+# TASK 6
+
+a=input("enter the name :")
+name_count=0
+char=""
+for i in a:
+    count=a.count(i)
+    if count>name_count:
+       name_count=count 
+       char=i
+print("frequent character:",char) 
+
+# TASK 7
+
+a = input("Enter first name: ")
+b = input("Enter second name: ")
+
+if sorted(a) == sorted(b):
+    print(True)
+else:
+    print(False)
+    
+
+# TASK 8
+
+a=input("Enter a string : ")
+char = ""
+for i in a:
+    if i in "qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM":
+        char= char + i
+print(char)
+
+# TASK 9
+
+String = input("Enter a string : ")
+l = String.split(" ")
+count = 0
+
+for i in l:
+    count += 1
+
+print(count)
+
+# TASK 10
+
+a=input("Enter sentence: ")
+words = a.split()
+print("Word:", len(words))
+
+# TASK  11
+a= input("Enter string: ")
+print(a.replace(" ", "-"))
+
+
+# TASK 13
+a = input("Enter string: ")
+for i in a:
+    if i.isdigit():
+        print(i, end="")
+        
+# TASK 14
+
+a= input("Enter a string : ")
+print(a[1::2])
+
+
+# TASK 15
+
+a= input("Enter a string : ")
+print(a.startswith("s"))
+print(a.endswith("n"))
 
 
 
